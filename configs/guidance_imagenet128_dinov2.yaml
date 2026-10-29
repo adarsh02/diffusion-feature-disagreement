@@ -1,0 +1,12 @@
+# ADM works directly with RGB images, so it needs a smaller update than U-ViT.
+experiment: guidance
+method: local_probe
+resolution: 128
+encoder: dino
+n: 10000
+window: 41-45
+dose: 0.25
+top_frac: 0.75
+M: 5
+batch_size: 8
+out: outputs/imagenet128/guided_dino_w41-45_d0.25

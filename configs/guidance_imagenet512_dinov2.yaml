@@ -1,0 +1,12 @@
+# Main ImageNet-512 guidance settings.
+experiment: guidance
+method: local_probe
+resolution: 512
+encoder: dino
+n: 10000
+window: 30-35
+dose: 2.0
+top_frac: 0.75
+M: 5
+batch_size: 8
+out: outputs/imagenet512/guided_dino_w30-35_d2.0

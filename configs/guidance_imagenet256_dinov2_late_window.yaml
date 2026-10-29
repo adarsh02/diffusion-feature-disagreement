@@ -1,0 +1,12 @@
+# ImageNet-256 with a later window and smaller update.
+experiment: guidance
+method: local_probe
+resolution: 256
+encoder: dino
+n: 10000
+window: 40-45
+dose: 0.5
+top_frac: 0.75
+M: 5
+batch_size: 10
+out: outputs/imagenet256/guided_dino_w40-45_d0.5

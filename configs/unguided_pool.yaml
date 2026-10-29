@@ -1,0 +1,7 @@
+# Unguided samples used by both guidance evaluation and filtering. Run this first.
+experiment: unguided
+resolution: 256
+n: 12000                  # filtering keeps several smaller groups from this pool
+batch_size: 40
+shard_size: 200
+out: outputs/imagenet256/pool

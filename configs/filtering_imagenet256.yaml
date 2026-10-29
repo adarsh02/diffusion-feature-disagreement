@@ -1,0 +1,19 @@
+# Score unguided samples and keep the lowest-scoring groups.
+experiment: filtering
+resolution: 256
+pool: outputs/imagenet256/pool
+scores: outputs/imagenet256/scores_dense       # produced by stage 1 below
+stage: all                # score | sweep | retention | all
+pool_n: 12000
+batch_size: 20
+shard_size: 200
+sweep_agg: dino_all
+range_width: 5
+skip_sparse: true
+keep: 10000
+encoders: [dino, mae]
+patch_rules: [all, top10]
+window: 26-30
+keeps: [6000, 7000, 8000, 9000, 10000, 11000]
+random_subsets: 20
+seed: 20260907

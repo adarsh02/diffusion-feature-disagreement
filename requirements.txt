@@ -1,0 +1,15 @@
+torch==2.3.1
+torchvision
+diffusers==0.31.0
+einops
+transformers>=4.44
+accelerate
+numpy
+scipy
+scikit-learn
+pillow
+pyyaml
+pytorch-fid
+torchmetrics
+lpips
+tqdm
